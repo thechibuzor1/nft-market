@@ -1,10 +1,9 @@
 import SvgLoader from "../SvgLoader";
-import ScrollingSvgs from "./ScrollingSvgs";
+
 
 function Footer() {
   return (
     <footer className="w-full flex flex-col items-center py-10">
-      <ScrollingSvgs />
       <div className="flex flex-col md:flex-row w-full md:w-[65%] h-auto md:h-[380px] justify-evenly px-6 py-10 mt-10 border border-[#262840] rounded-2xl space-y-6 md:space-y-0">
         {/* Logo Section */}
         <div className="relative flex flex-col p-6 md:w-1/3">

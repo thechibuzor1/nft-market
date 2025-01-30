@@ -1,5 +1,6 @@
 import Auctions from "./components/Auctions/Auctions";
 import Footer from "./components/Footer/Footer";
+import ScrollingSvgs from "./components/Footer/ScrollingSvgs";
 import Habitant from "./components/Habitant/Habitant";
 import Header from "./components/Header/Header";
 import Overline from "./components/Overline/Overline";
@@ -30,6 +31,9 @@ export default function Home() {
         <Popular />
         <Stats />
       </main>
+
+        {/* Inifinity Scrolling Svgs */}
+      <ScrollingSvgs />
 
       {/* Footer Section */}
       <Footer />

@@ -5,7 +5,7 @@ import Body from "./Body";
 
 function Details() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div>
       <TopBar />
       <main className="flex-grow">
         <Body />
