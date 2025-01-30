@@ -1,10 +1,17 @@
 NFT Market - Next.js App
 This is a Next.js project bootstrapped with create-next-app and TailwindCSS.  
 
+<<<<<<< HEAD
 # DEMO: View live demo here  https://nft-market-three-opal.vercel.app/
 
 
 ## Getting Started
+=======
+DEMO: View live demo here ##https://nft-market-three-opal.vercel.app/
+
+
+Getting Started
+>>>>>>> e0d2320 (done)
 To get the project up and running on your local machine, follow these steps:
 
 1. Clone the repository

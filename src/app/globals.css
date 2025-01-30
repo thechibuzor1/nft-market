@@ -25,12 +25,18 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: 'Sora';
-
+}
+button{
+  font-family: 'Sora';
 }
 p,a{
   font-family: 'inter';
   color:#7780A1;
   font-weight: 400;
+}
+a:hover{
+  color:white;
+  cursor: pointer;
 }
 
 h1{

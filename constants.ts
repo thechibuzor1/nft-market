@@ -1,3 +1,7 @@
+/**
+ *Static data
+ */
+
 export const auctions = [
     {
       title: "Tristique diam a, enim, eros tellus. Viverra etiam",
@@ -194,5 +198,59 @@ export const auctions = [
         "/images/profiles/profile3.png",
         "/images/profiles/profile4.jpeg",
       ],
+    },
+  ];
+
+export const nfts = [
+    {
+      title: "Vulputate velit viverra volutpat volutpat tristique",
+      value: 1.25,
+      time: "22:59",
+      bids: 101,
+      cover: "/images/nfts/blkimg1.png",
+    },
+    {
+      title: "Egestas blandit sit egestas non sed. Purus semper",
+      value: 1.25,
+      time: "22:59",
+      bids: 101,
+      cover: "/images/nfts/blkimg2.png",
+    },
+    {
+      title: "Id ut consequat netus nec vel amet ut porta in augue",
+      value: 1.25,
+      time: "22:59",
+      bids: 101,
+      cover: "/images/nfts/blkimg3.png",
+    },
+    {
+      title: "Sed et nibh felis integer tellus turpin",
+      value: 1.25,
+      time: "22:59",
+      bids: 101,
+      cover: "/images/nfts/blkimg4.png",
+    },
+  ];
+
+export const stat_data = [
+    {
+      svg: "profile.svg",
+      number: "300k",
+      stat: "Users Active",
+    },
+    {
+      svg: "Artworks.svg",
+      number: "52,5k",
+      stat: "Artworks",
+    },
+    {
+      svg: "artists.svg",
+      number: "17,5k",
+      stat: "Artists",
+    },
+    {
+      svg: "eth.svg",
+      number: "35.58",
+      stat: "ETH Spent",
     },
   ];

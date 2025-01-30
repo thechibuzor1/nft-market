@@ -4,39 +4,70 @@ import FloatingSVGs from "./FloatingItems";
 import SearchBar from "./SearchBar";
 import TopBar from "./TopBar";
 
+/**
+ * Header Component
+ * 
+ * Displays the top section of the page, including:
+ * - Navigation bar (TopBar)
+ * - Floating decorative SVGs
+ * - Main title and tagline
+ * - Search bar and brand logos
+ * 
+ */
+
 function Header() {
   return (
-    <div className="h-screen bg-[url('/Background.svg')] bg-no-repeat bg-center bg-cover">
+    <header className="h-screen bg-[url('/Background.svg')] bg-no-repeat bg-center bg-cover">
+      {/* Top Navigation Bar */}
       <TopBar />
+
+      {/* Floating Decorative SVGs */}
       <FloatingSVGs />
 
-      <div className="flex flex-col items-center pt-4 px-4 max-w-screen-xl mx-auto">
-        <p className="text-sm md:text-base text-[#7780A1] text-center">Non Fungible Tokens</p>
+      {/* Main Content */}
+      <main className="flex flex-col items-center pt-4 px-4 max-w-screen-xl mx-auto">
+        {/* Tagline */}
+        <p className="text-sm md:text-base text-[#7780A1] text-center">
+          Non Fungible Tokens
+        </p>
 
+        {/* Title Section */}
         <div className="h-auto text-center">
-  <div className="flex flex-col md:flex-row items-center justify-center">
-    <h1 className="text-3xl md:text-5xl lg:text-7xl xl:text-[120px] font-bold">
-      A new NFT
-    </h1>
-    <SvgLoader fileName="Vector1.svg" className="hidden md:block ml-4 w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20" />
-  </div>
-  <div className="flex flex-col md:flex-row items-center justify-center">
-    <SvgLoader fileName="Frame1.svg" className="hidden md:block mr-4 w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20" />
-    <h1 className="text-3xl md:text-5xl lg:text-7xl xl:text-[120px] font-bold">
-      Experience
-    </h1>
-  </div>
-</div>
+          {/* First Line of Title */}
+          <div className="flex flex-col md:flex-row items-center justify-center">
+            <h1 className="text-3xl md:text-5xl lg:text-7xl xl:text-[120px] font-bold">
+              A new NFT
+            </h1>
+            <SvgLoader
+              fileName="Vector1.svg"
+              className="hidden md:block ml-4 w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20"
+            />
+            <div className="w-40" />
+          </div>
 
+          {/* Second Line of Title */}
+          <div className="flex flex-col md:flex-row items-center justify-center">
+            <div className="w-40" />
+            <SvgLoader
+              fileName="Frame1.svg"
+              className="hidden md:block mr-4 w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20"
+            />
+            <h1 className="text-3xl md:text-5xl lg:text-7xl xl:text-[120px] font-bold">
+              Experience
+            </h1>
+          </div>
+        </div>
 
-        <div className="flex flex-col items-center mt-6 md:mt-10">
-          <p className="text-sm md:text-base text-[#7780A1] mb-6">Discover, collect and sell</p>
+        {/* Description, Search, and Logos */}
+        <div className="flex flex-col items-center mt-12 md:mt-16">
+          <p className="text-sm md:text-base text-[#7780A1] mb-6">
+            Discover, collect and sell
+          </p>
           <SearchBar />
-
           <BottomLogos />
         </div>
-      </div>
-    </div>
+      </main>
+    </header>
   );
 }
 

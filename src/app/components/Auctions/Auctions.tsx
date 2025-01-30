@@ -5,6 +5,13 @@ import AuctionBlocks from "./AuctionBlocks";
 import SvgLoader from "../SvgLoader";
 import { auctions } from "../../../../constants";
 
+/**
+ * Auctions Component
+ * 
+ * Displays a horizontally scrollable list of live auctions.
+ *
+ */
+
 const Auctions: React.FC = () => {
   const carouselRef = useRef<HTMLDivElement>(null);
 
@@ -46,7 +53,7 @@ const Auctions: React.FC = () => {
       <button
         title="scroll"
         onClick={scrollRight}
-        className="absolute right-[10%] top-[40%] bg-[#262840CC] rounded-full w-[60px] h-[60px] flex items-center justify-center shadow-lg hover:bg-[#110f31] transition"
+        className="absolute right-[10%] top-[40%] bg-[#262840CC] rounded-full w-[120px] h-[120px] flex items-center justify-center shadow-lg hover:bg-[#110f31] transition"
       >
         <SvgLoader fileName="tiny next.svg" />
       </button>
@@ -54,7 +61,7 @@ const Auctions: React.FC = () => {
       <button
         title="scroll"
         onClick={scrollLeft}
-        className="absolute left-[10%] top-[40%] bg-[#262840CC] rounded-full w-[60px] h-[60px] flex items-center justify-center shadow-lg hover:bg-[#110f31] transition"
+        className="absolute left-[10%] top-[40%] bg-[#262840CC] rounded-full w-[120px] h-[120px] flex items-center justify-center shadow-lg hover:bg-[#110f31] transition"
       >
         <SvgLoader className="rotate-180" fileName="tiny next.svg" />
       </button>

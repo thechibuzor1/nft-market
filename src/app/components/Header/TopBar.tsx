@@ -23,11 +23,11 @@ import { useRouter } from "next/navigation";
 
       {/* Buttons (On Same Line for All Screen Sizes) */}
       <div className="flex items-center gap-2 md:gap-3">
-        <button className="px-2 py-1 md:px-4 md:py-2 border-2 border-[#262840] text-[12px] text-[#7780A1] rounded-xl bg-transparent w-full md:w-auto">
+        <button className="px-2 py-1 md:px-4 md:py-2 border-2 border-[#262840] text-[12px] text-[#7780A1] rounded-xl bg-transparent w-full  md:w-auto">
           Contact
         </button>
 
-        <button className="px-3 py-1 md:px-4 md:py-2 border-2 border-[#262840] text-[12px] md:text-[14px] rounded-xl bg-[#4745D0] whitespace-nowrap min-w-[100px] w-full md:w-auto">
+        <button className="px-3 py-1 md:px-4 md:py-2 border-2 border-[#262840] text-[12px] md:text-[14px] rounded-xl bg-[#4745D0] whitespace-nowrap min-w-[100px]w-full md:w-auto">
           My account
         </button>
       </div>
