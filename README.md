@@ -1,7 +1,7 @@
 NFT Market - Next.js App
 This is a Next.js project bootstrapped with create-next-app. This app serves as a marketplace for NFTs, showcasing various NFT collections with a clean, modern user interface.
 
-DEMO: View live demo here ##thechhttps://nft-market-three-opal.vercel.app/
+DEMO: View live demo here  https://nft-market-three-opal.vercel.app/
 
 
 ##Getting Started
