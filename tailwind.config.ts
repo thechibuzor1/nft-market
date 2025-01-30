@@ -12,6 +12,20 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      
+      keyframes: {
+        float: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" },
+        },
+        scroll: {
+          '100%': { transform: 'translateX(-100%)' },
+        },
+      },
+      animation: {
+        float: "float 3s ease-in-out infinite",
+        scroll: 'scroll 10s linear infinite',
+      },
     },
   },
   plugins: [],
