@@ -8,8 +8,8 @@ import Footer from "../components/Footer/Footer";
 import MoreFrom from "./MoreFrom";
 
 function page() {
-  const [timeLeft, setTimeLeft] = useState("22:59 min");
-  const [currentPrice, setCurrentPrice] = useState("5.25 ETH");
+  const [timeLeft, setTimeLeft] = useState<string>("22:59 min");
+  const [currentPrice, setCurrentPrice] = useState<string>("5.25 ETH");
   return (
     <>
       <TopBar />
@@ -22,14 +22,14 @@ function page() {
               alt="Artwork"
               width={500}
               height={700}
-              className="rounded-lg object-cover w-full"
+              className="rounded-lg h-[100%] object-cover w-full"
             />
           </div>
           <div className="md:ml-6 mt-6 md:mt-0 w-full md:w-1/2 text-white">
-            <h2 className="text-2xl font-bold">
+            <h2 className="text-3xl font-bold">
               Dui accumsan leo vestibulum ornare
             </h2>
-            <p className="text-gray-400 mt-2">
+            <p className=" mt-2">
               Ut amet vulputate faucibus vitae semper eget auctor. Diam tempor
               pulvinar ultricies dolor feugiat aliquam commodo.
             </p>
@@ -42,7 +42,10 @@ function page() {
                   height={24}
                   className="rounded-full"
                 />
+                <div className="flex flex-col ml-4">
+                <p className="text-sm">Creator</p>
                 <span className="text-sm">@brock_sim</span>
+                </div>
               </div>
               <div className="flex items-center space-x-2 bg-gray-800 px-3 py-1 rounded-lg">
                 <span className="text-sm">Collection: Afterlife</span>

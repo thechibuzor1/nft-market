@@ -1,11 +1,18 @@
+'use client';
+
 import CenterTop from "./CenterTop";
 import SvgLoader from "../SvgLoader";
+import { useRouter } from "next/navigation";
 
-function TopBar() {
+ function TopBar() { 
+  
+  const router = useRouter();
   return (
-    <header className="flex justify-between items-center p-3 md:p-5 max-w-screen-xl mx-auto">
+   
+
+    <header className="cursor-pointer flex justify-between items-center p-3 md:p-5 max-w-screen-xl mx-auto">
       {/* Logo */}
-      <div className="flex-shrink-0">
+      <div  onClick={() => router.push("/")} className="flex-shrink-0">
         <SvgLoader fileName="Logo.svg" className="w-24 h-auto" />
       </div>
 
