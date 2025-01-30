@@ -1,12 +1,14 @@
 import Image from "next/image";
 import SvgLoader from "../SvgLoader";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 function PopularBlocks({ item }: { item: any }) {
   const [liked, setLiked] = useState<boolean>(false);
-
+const router = useRouter();
   return (
-    <div className="p-4 w-full md:w-[200px] lg:w-[250px] hover:bg-[#110f31] transition rounded-2xl">
+    <div  onClick={() => router.push("/details")}
+       className="p-4 cursor-pointerw-full md:w-[200px] lg:w-[250px] hover:bg-[#110f31] transition rounded-2xl">
       <Image width={200} height={300} className="h-[300px] w-full object-cover rounded-2xl mb-5" src={item.cover} alt="" />
 
       <div className="flex items-start h-[65px]">

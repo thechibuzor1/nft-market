@@ -3,13 +3,16 @@ import Image from "next/image";
 import SvgLoader from "../SvgLoader";
 import { useState } from "react";
 import { auctions } from "../../../../constants";
+import { useRouter } from "next/navigation";
 
 function SlideItem({ item, isActive }: { item: any; isActive: boolean }) {
   const [liked, setLiked] = useState<boolean>(false);
-
+  const router = useRouter();
+    
   return (
     <div
-      className={`flex w-[200px] flex-shrink-0 flex-col transition-opacity duration-500 ${
+    onClick={() => router.push("/details")}
+      className={`cursor-pointer flex w-[200px] flex-shrink-0 flex-col transition-opacity duration-500 ${
         isActive ? "opacity-100" : "opacity-25"
       }`}
     >

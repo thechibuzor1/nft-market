@@ -3,6 +3,7 @@
 import Image from "next/image";
 import SvgLoader from "../SvgLoader";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 const nfts = [
   {
@@ -37,9 +38,10 @@ const nfts = [
 
 function Blocks({ item }: { item: any }) {
   const [liked, setLiked] = useState<boolean>(false);
-
+   const router = useRouter();
   return (
-    <div className="flex flex-row">
+    <div  onClick={() => router.push("/details")}
+       className="flex flex-row cursor-pointer ">
       <Image
         alt="nft"
         height={100}
