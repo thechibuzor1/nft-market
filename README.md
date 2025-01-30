@@ -15,31 +15,8 @@ git clone https://github.com/thechibuzor1/nft-market.git
 cd nft-market
 2. Install dependencies
 The project uses npm, yarn, pnpm, or bun for package management. You can choose any of these.
-
-Using npm:
-
-bash
-Copy
-Edit
-npm install
-Using yarn:
-
-bash
-Copy
-Edit
-yarn install
-Using pnpm:
-
-bash
-Copy
-Edit
-pnpm install
-Using bun:
-
-bash
-Copy
-Edit
-bun install
+ex: npm install or yarn 
+ 
 3. Run the Development Server
 After the dependencies are installed, you can start the development server:
 
