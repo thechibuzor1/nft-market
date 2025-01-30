@@ -83,7 +83,7 @@ function Stats() {
 
         {/* Image Content */}
         <div className="mt-6 md:mt-0 flex justify-center w-full max-w-[400px] sm:max-w-[500px] md:max-w-[600px]">
-          <SvgLoader className="animate-float w-full h-auto" fileName="users.svg" />
+          <SvgLoader className="animate-float w-full h-auto" fileName="Users.svg" />
         </div>
       </div>
     </div>
