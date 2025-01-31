@@ -56,19 +56,19 @@ function AuctionBlocks({ item }: { item: any }) {
           ))}
         </div>
 
-        <p className="text-[400] text-[14px] text-[#7780A1]">
+        <p className="text-[400] text-[12px]">
           {item.bids} people are bidding
         </p>
         <div
           onClick={() => setLiked(!liked)}
-          className="flex flex-row items-center space-x-2"
+          className="flex flex-row items-center space-x-1"
         >
           <SvgLoader
             width={20}
             height={20}
             fileName={liked ? "tiny heart filled.svg" : "tiny heart.svg"}
           />
-          <p className="text-[400] text-[14px] text-[#7780A1]">{item.likes}</p>
+          <p className="text-[400] text-[12px] ">{item.likes}</p>
         </div>
       </div>
     </div>

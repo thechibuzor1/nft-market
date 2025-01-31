@@ -52,7 +52,7 @@ function PopularBlocks({ item }: { item: any }) {
 
         <div
           onClick={() => setLiked(!liked)}
-          className="flex flex-row items-center space-x-2 cursor-pointer"
+          className="flex flex-row items-center space-x-1 cursor-pointer"
         >
           <SvgLoader
             width={20}
@@ -60,7 +60,7 @@ function PopularBlocks({ item }: { item: any }) {
             fileName={liked ? "tiny heart filled.svg" : "tiny heart.svg"}
             className=""
           />
-          <p className="text-[400] text-[12px] text-[#7780A1]">{item.likes}</p>
+          <p className="text-[400] text-[12px]">{item.likes}</p>
         </div>
       </div>
     </div>
