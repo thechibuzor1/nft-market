@@ -1,6 +1,6 @@
 "use client";
 
-import { auctions } from "../../../constants";
+import { more_from } from "../../../constants";
 import PopularBlocks from "../components/Popular/Blocks";
 
 function MoreFrom() {
@@ -14,7 +14,7 @@ function MoreFrom() {
 
       {/* Auction Blocks */}
       <div className="flex flex-wrap mt-6 justify-center gap-4">
-        {auctions.slice(0, 5).map((item, index) => (
+        {more_from.slice(0, 5).map((item, index) => (
           <div
             key={index}
             className="snap-center flex-shrink-0 w-[180px] sm:w-[220px] md:w-[250px] lg:w-[280px]"

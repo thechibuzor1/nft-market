@@ -33,42 +33,29 @@ function AuctionBlocks({ item }: { item: any }) {
 
       <div className="flex flex-row items-center mb-5 space-x-2">
         <SvgLoader width={20} height={20} fileName="tiny clock.svg" />
-        <p className="text-[400] text-white text-[14px]">{item.time} min left</p>
+        <p className="text-[400] text-white text-[14px]">
+          {item.time} min left
+        </p>
       </div>
 
       <div className="w-[95%] self-center h-[1px] bg-[#262840]" />
 
       <div className="flex mt-4 justify-between items-center">
-        <div className="flex relative">
-          <Image
-            width={32}
-            height={32}
-            className="h-[32px] w-[32px] rounded-full "
-            src={item.profiles[0]}
-            alt=""
-          />
-          <Image
-            width={32}
-            height={32}
-            className="h-[32px] w-[32px] rounded-full absolute left-[25%] "
-            src={item.profiles[1]}
-            alt=""
-          />
-          <Image
-            width={32}
-            height={32}
-            className="h-[32px] w-[32px] rounded-full absolute left-[50%]"
-            src={item.profiles[2]}
-            alt=""
-          />
-          <Image
-            width={32}
-            height={32}
-            className="h-[32px] w-[32px] rounded-full absolute left-[75%]"
-            src={item.profiles[3]}
-            alt=""
-          />
+        <div className="flex">
+          {item.profiles.map((profile: string, i: number) => (
+            <Image
+              key={i}
+              width={32}
+              height={32}
+              className={`h-[32px] w-[32px] rounded-full ${
+                i !== 0 ? "-ml-2" : ""
+              }`}
+              src={profile}
+              alt=""
+            />
+          ))}
         </div>
+
         <p className="text-[400] text-[14px] text-[#7780A1]">
           {item.bids} people are bidding
         </p>

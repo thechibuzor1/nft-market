@@ -1,8 +1,8 @@
 'use client';
 
 import { useState } from "react";
-import { auctions } from "../../../../constants";
 import PopularBlocks from "./Blocks";
+import { popular_auctions } from "../../../../constants";
 
 // Categories for the filters
 const categories = ["Architecture", "Photography", "Games", "Music"];
@@ -58,7 +58,7 @@ function Popular() {
       {/* Popular Auctions Section */}
       <div className="flex flex-wrap justify-center">
         {/* Map through auctions to display the auction blocks */}
-        {auctions.slice(0, 5).map((item, index) => (
+        {popular_auctions.map((item, index) => (
           <div key={index} className="snap-center flex-shrink-0 w-[180px] sm:w-[220px] md:w-[250px] lg:w-[280px]">
             {/* Popular auction block */}
             <PopularBlocks item={item} />
