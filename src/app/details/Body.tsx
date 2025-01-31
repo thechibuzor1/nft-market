@@ -50,13 +50,13 @@ function Body() {
           </p>
 
           {/* Creator & Collection Info */}
-          <div className="flex items-center mt-4 space-x-3">
+          <div className="flex items-center mt-4 space-x-4">
             {[
               { img: "/images/profiles/profile5.jpeg", label: "Creator", name: "@brock_sim" },
               { img: "/images/collection.jpeg", label: "Collection", name: "Afterlife" },
             ].map(({ img, label, name }) => (
-              <div key={name} className="flex items-center space-x-4 px-3 py-1 rounded-lg">
-                <Image src={img} alt={label} width={32} height={32} className="rounded-full w-[32] h-[32]" />
+              <div key={name} className="flex items-center space-x-3 py-1 rounded-lg">
+                <Image src={img} alt={label} width={32} height={32} className="rounded-full w-8 h-8" />
                 <div className="flex flex-col">
                   <p className="text-[12px]">{label}</p>
                   <span className="text-[12px]">{name}</span>

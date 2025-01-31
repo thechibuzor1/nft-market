@@ -206,28 +206,28 @@ export const nfts = [
       value: 1.25,
       time: "22:59",
       bids: 101,
-      cover: "/images/nfts/blkimg1.jpeg",
+      cover: "/images/nfts/blkimg1.png",
     },
     {
       title: "Egestas blandit sit egestas non sed. Purus semper",
       value: 1.25,
       time: "22:59",
       bids: 101,
-      cover: "/images/nfts/blkimg2.jpeg",
+      cover: "/images/nfts/blkimg2.png",
     },
     {
       title: "Id ut consequat netus nec vel amet ut porta in augue",
       value: 1.25,
       time: "22:59",
       bids: 101,
-      cover: "/images/nfts/blkimg3.jpeg",
+      cover: "/images/nfts/blkimg3.png",
     },
     {
       title: "Sed et nibh felis integer tellus turpin",
       value: 1.25,
       time: "22:59",
       bids: 101,
-      cover: "/images/nfts/blkimg4.jpeg",
+      cover: "/images/nfts/blkimg4.png",
     },
   ];
 

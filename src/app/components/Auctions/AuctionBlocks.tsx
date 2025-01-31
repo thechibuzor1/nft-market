@@ -41,7 +41,7 @@ function AuctionBlocks({ item }: { item: any }) {
       <div className="w-[95%] self-center h-[1px] bg-[#262840]" />
 
       <div className="flex mt-4 justify-between items-center">
-        <div className="flex">
+        <div className="flex mr-2">
           {item.profiles.map((profile: string, i: number) => (
             <Image
               key={i}
