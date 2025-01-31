@@ -1,3 +1,4 @@
+import Image from "next/image";
 import SvgLoader from "../SvgLoader";
 
 function Habitant() {
@@ -6,7 +7,13 @@ function Habitant() {
       {/* Illustration Section */}
       <div className="mt-6 md:mt-0 flex justify-center w-full max-w-[500px] md:max-w-[600px]">
         {/* SVG Loader for the Habitant Illustration */}
-        <SvgLoader className="animate-float w-full h-auto" fileName="habitant.svg" />
+        <Image
+          width={200}
+          height={200}
+          alt="overline"
+          className="animate-float w-full h-auto"
+          src="/images/habitant.png"
+        />
       </div>
 
       {/* Text Content Section */}
@@ -21,7 +28,8 @@ function Habitant() {
 
         {/* Description Paragraph */}
         <p className="text-[15px] text-[#7780A1] my-6">
-          Ut amet vulputate faucibus vitae semper eget auctor. Diam tempor pulvinar ultricies dolor feugiat aliquam commodo.
+          Ut amet vulputate faucibus vitae semper eget auctor. Diam tempor
+          pulvinar ultricies dolor feugiat aliquam commodo.
         </p>
 
         {/* Feature Highlight Section */}
@@ -47,7 +55,7 @@ function Habitant() {
           <button className="px-6 py-3 border-2 border-[#262840] text-[16px] rounded-xl bg-[#2A27C9] text-white">
             Get started
           </button>
-          
+
           {/* Learn More Button */}
           <button className="px-6 py-3 border-2 border-[#262840] text-[16px] text-[#7780A1] rounded-xl bg-transparent">
             Learn more

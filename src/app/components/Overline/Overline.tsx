@@ -1,17 +1,17 @@
+import Image from "next/image";
 import SvgLoader from "../SvgLoader";
 
 /**
  * Overline Component
- * 
+ *
  * - Displays a heading, description, and action buttons.
  * - Includes an SVG illustration with floating animation.
- *  
+ *
  */
 
 function Overline() {
   return (
     <div className="flex flex-col md:flex-row items-center justify-center w-full h-screen px-4 md:px-0">
-      
       {/* Left Content: Text Section */}
       <div className="flex flex-col max-w-xl w-full md:mr-4">
         {/* Overline Label */}
@@ -43,9 +43,14 @@ function Overline() {
 
       {/* Right Content: Floating SVG Illustration */}
       <div className="mt-6 md:mt-0 flex justify-center w-full max-w-[500px] md:max-w-[600px]">
-        <SvgLoader className="animate-float w-full h-auto" fileName="overline.svg" />
+        <Image
+          width={200}
+          height={200}
+          alt="overline"
+          className="animate-float w-full h-auto"
+          src="/images/overline.png"
+        />
       </div>
-      
     </div>
   );
 }
