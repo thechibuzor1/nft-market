@@ -44,7 +44,7 @@ function Habitant() {
         {/* Action Buttons Section */}
         <div className="flex flex-col sm:flex-row gap-3 mt-5">
           {/* Get Started Button */}
-          <button className="px-6 py-3 border-2 border-[#262840] text-[16px] rounded-xl bg-[#4745D0] text-white">
+          <button className="px-6 py-3 border-2 border-[#262840] text-[16px] rounded-xl bg-[#2A27C9] text-white">
             Get started
           </button>
           

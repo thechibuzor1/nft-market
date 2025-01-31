@@ -23,7 +23,7 @@ function ScrollingSvgs() {
     <div className="w-full overflow-hidden  py-4">
       <div className="flex animate-scroll">
         {duplicatedSvgs.map((svg, index) => (
-          <SvgLoader key={index} fileName={svg.fileName} />
+          <SvgLoader className="w-16 h-16 md:w-48 md:h-48" key={index} fileName={svg.fileName} />
         ))}
       </div>
     </div>

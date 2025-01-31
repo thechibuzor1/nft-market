@@ -1,32 +1,40 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+/**
+ * SvgLoader Component
+ * -------------------
+ * This component loads an SVG from the `public/svgs/` directory using Next.js Image optimization.
+ *
+ * Props:
+ * - `fileName` (string)   : The SVG filename (e.g., "icon.svg").
+ * - `className` (string?) : Optional CSS classes for styling.
+ * - `width` (number?)     : Width of the SVG (default: 50).
+ * - `height` (number?)    : Height of the SVG (default: 50).
+ *
+ * Usage:
+ * <SvgLoader fileName="logo.svg" className="w-6 h-6" width={24} height={24} />
+ */
 
-const SvgLoader = ({ fileName, className }: { fileName: string; className?: string }) => {
-  const [svgContent, setSvgContent] = useState<string | null>(null);
+import Image from 'next/image';
 
-  useEffect(() => {
-    const loadSvg = async () => {
-      try {
-        const response = await fetch(`/svgs/${fileName}`);
-        const svgText = await response.text();
-        setSvgContent(svgText);
-      } catch (error) {
-        console.error('Error loading SVG:', error);
-      }
-    };
-
-    loadSvg();
-  }, [fileName]);
-
-  if (!svgContent) return null;
-
-  // Inject the className into the SVG element
-  const svgWithClass = svgContent.replace('<svg', `<svg class="${className}"`);
-
+const SvgLoader = ({
+  fileName,
+  className,
+  width = 50,
+  height = 50,
+}: {
+  fileName: string;
+  className?: string;
+  width?: number;
+  height?: number;
+}) => {
   return (
-    <div
-      dangerouslySetInnerHTML={{ __html: svgWithClass }}
+    <Image
+      src={`/svgs/${fileName}`} // Loads from `public/svgs/`
+      alt={fileName.replace('.svg', '')} // Removes `.svg` for better alt text
+      width={width}
+      height={height}
+      className={className} // Apply custom styles
     />
   );
 };

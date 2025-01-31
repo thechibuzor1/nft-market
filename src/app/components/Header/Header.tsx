@@ -39,16 +39,18 @@ function Header() {
               A new NFT
             </h1>
             <SvgLoader
+              width={50} height={50}
               fileName="Vector1.svg"
               className="hidden md:block ml-4 w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20"
             />
-            <div className="w-40" />
+            <div className="w-20" />
           </div>
 
           {/* Second Line of Title */}
           <div className="flex flex-col md:flex-row items-center justify-center">
-            <div className="w-40" />
+            <div className="w-20" />
             <SvgLoader
+            width={50} height={50}
               fileName="Frame1.svg"
               className="hidden md:block mr-4 w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20"
             />

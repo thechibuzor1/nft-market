@@ -3,10 +3,9 @@
 import Image from "next/image";
 import SvgLoader from "../SvgLoader";
 import { useState } from "react";
-import { useRouter } from "next/navigation";
 import { nfts } from "../../../../constants";
+import Link from "next/link";
 // Sample NFT data (static list for now)
- 
 
 /**
  * Blocks Component
@@ -15,14 +14,11 @@ import { nfts } from "../../../../constants";
  */
 function Blocks({ item }: { item: any }) {
   const [liked, setLiked] = useState<boolean>(false);
-  const router = useRouter();
 
   return (
-    <div 
-      onClick={() => router.push("/details")} 
-      className="flex flex-row cursor-pointer"
-    >
+    <div className="flex flex-row cursor-pointer">
       {/* NFT Cover Image */}
+
       <Image
         alt="NFT Image"
         height={100}
@@ -34,15 +30,16 @@ function Blocks({ item }: { item: any }) {
       {/* NFT Details */}
       <div className="flex flex-col ml-3">
         {/* Title */}
-        <h3 className="font-semibold leading-none line-clamp-2 overflow-hidden text-ellipsis mb-2 text-[14px]">
-          {item.title}
-        </h3>
-
+        <Link href="/details">
+          <h3 className="font-semibold cursor-pointer text-white leading-none line-clamp-2 overflow-hidden text-ellipsis mb-2 text-[14px]">
+            {item.title}
+          </h3>
+        </Link>
         {/* Time & Price */}
         <div className="flex flex-row items-center mb-2 justify-between">
           {/* Remaining Time */}
           <div className="flex flex-row items-center space-x-2">
-            <SvgLoader fileName="tiny clock.svg" />
+            <SvgLoader width={15} height={15} fileName="tiny clock.svg" />
             <p className="text-[10px]">{item.time}</p>
           </div>
 
@@ -62,7 +59,11 @@ function Blocks({ item }: { item: any }) {
 
           {/* Like Button */}
           <div onClick={() => setLiked(!liked)}>
-            <SvgLoader fileName={liked ? "tiny heart filled.svg" : "tiny heart.svg"} />
+            <SvgLoader
+              width={20}
+              height={20}
+              fileName={liked ? "tiny heart filled.svg" : "tiny heart.svg"}
+            />
           </div>
         </div>
       </div>

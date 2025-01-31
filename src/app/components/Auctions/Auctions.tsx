@@ -55,7 +55,7 @@ const Auctions: React.FC = () => {
         onClick={scrollRight}
         className="absolute right-[10%] top-[40%] bg-[#262840CC] rounded-full w-[120px] h-[120px] flex items-center justify-center shadow-lg hover:bg-[#110f31] transition"
       >
-        <SvgLoader fileName="tiny next.svg" />
+        <SvgLoader  width={15} height={15} fileName="tiny next.svg" />
       </button>
 
       <button
@@ -63,7 +63,7 @@ const Auctions: React.FC = () => {
         onClick={scrollLeft}
         className="absolute left-[10%] top-[40%] bg-[#262840CC] rounded-full w-[120px] h-[120px] flex items-center justify-center shadow-lg hover:bg-[#110f31] transition"
       >
-        <SvgLoader className="rotate-180" fileName="tiny next.svg" />
+        <SvgLoader width={15} height={15}  className="rotate-180" fileName="tiny next.svg" />
       </button>
     </div>
   );

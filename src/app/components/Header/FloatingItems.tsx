@@ -22,7 +22,7 @@ const FloatingSVGs: React.FC = () => {
             transform: "translate(-50%, -50%)",
           }}
         >
-          <SvgLoader fileName={svg.fileName} className="w-16 h-16 md:w-48 md:h-48" />
+          <SvgLoader width={50} height={50} fileName={svg.fileName} className="w-16 h-16 md:w-48 md:h-48" />
         </div>
       ))}
     </div>

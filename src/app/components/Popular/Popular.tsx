@@ -22,7 +22,7 @@ const CategoryBlocks = ({
       onClick={() => setActive(item)}
       className={`border border-[${
         active ? "#7780A1" : "#262840"
-      }] border-[2px] p-2 rounded-lg`}
+      }] border-[2px] p-2 rounded-lg hover:border-white cursor-pointer`}
     >
       {/* Category Name */}
       <h3 className="font-semibold text-[#7780A1]">{item}</h3>

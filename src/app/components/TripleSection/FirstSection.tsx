@@ -4,7 +4,8 @@ import Image from "next/image";
 import SvgLoader from "../SvgLoader";
 import { useState } from "react";
 import { auctions } from "../../../../constants";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
+
 
 /**
  * SlideItem Component
@@ -14,16 +15,16 @@ import { useRouter } from "next/navigation";
  */
 function SlideItem({ item, isActive }: { item: any; isActive: boolean }) {
   const [liked, setLiked] = useState<boolean>(false);
-  const router = useRouter();
+
 
   return (
     <div
-      onClick={() => router.push("/details")}
       className={`cursor-pointer flex w-[200px] flex-shrink-0 flex-col transition-opacity duration-500 ${
         isActive ? "opacity-100" : "opacity-25"
       }`}
     >
       {/* Auction Item Image */}
+      <Link href="/details">
       <Image
         width={200}
         height={300}
@@ -31,18 +32,20 @@ function SlideItem({ item, isActive }: { item: any; isActive: boolean }) {
         src={item.cover}
         alt={item.title}
       />
+      </Link>
 
       {/* Auction Item Title */}
-      <h2 className="font-semibold leading-none my-4 line-clamp-2 overflow-hidden text-ellipsis">
+      <Link href="/details">
+      <h2 className="font-semibold text-white leading-none my-4 line-clamp-2 overflow-hidden text-ellipsis">
         {item.title}
-      </h2>
+      </h2></Link>
 
       {/* Auction Timer and Price Section */}
       <div className="flex flex-row items-center justify-between">
         {/* Time Remaining */}
         <div className="flex flex-row items-center space-x-2">
-          <SvgLoader fileName="tiny clock.svg" />
-          <p className="text-[12px]">{item.time}</p>
+          <SvgLoader width={15} height={15}  fileName="tiny clock.svg" />
+          <p className="text-[12px] text-white">{item.time}</p>
         </div>
 
         {/* Auction Price */}
@@ -60,7 +63,7 @@ function SlideItem({ item, isActive }: { item: any; isActive: boolean }) {
 
         {/* Toggle Like Button */}
         <div onClick={() => setLiked(!liked)}>
-          <SvgLoader fileName={liked ? "tiny heart filled.svg" : "tiny heart.svg"} />
+          <SvgLoader width={20} height={20} fileName={liked ? "tiny heart filled.svg" : "tiny heart.svg"} />
         </div>
       </div>
     </div>
@@ -111,7 +114,7 @@ function FirstSection() {
         title="Next"
         className="absolute right-[10%] top-[40%] bg-[#262840CC] rounded-full w-[60px] h-[60px] flex items-center justify-center shadow-lg hover:bg-[#110f31] transition"
       >
-        <SvgLoader fileName="tiny next.svg" />
+        <SvgLoader width={10} height={10}  fileName="tiny next.svg" />
       </button>
 
       {/* "Show More" Button */}

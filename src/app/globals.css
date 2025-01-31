@@ -29,6 +29,9 @@ body {
 button{
   font-family: 'Sora';
 }
+button:hover{
+  background-color: rgb(16, 16, 120);
+}
 p,a{
   font-family: 'inter';
   color:#7780A1;

@@ -4,8 +4,8 @@ import SvgLoader from "../components/SvgLoader";
 
 function FloatingIcons({ name }: { name: string }) {
   return (
-    <div className="p-6 border border-[#262840] bg-[#060714] rounded-full w-14 h-14 flex items-center justify-center">
-      <SvgLoader fileName={name} />
+    <div className="p-6 hover:bg-slate-700 border cursor-pointer border-[#262840] bg-[#060714] rounded-full flex items-center justify-center">
+      <SvgLoader width={15} height={15} fileName={name}  />
     </div>
   );
 }
@@ -13,7 +13,7 @@ function FloatingIcons({ name }: { name: string }) {
 function Body() {
   return (
     <div className="flex justify-center items-center min-h-screen p-6">
-      <div className="relative border border-[#262840] rounded-2xl p-6 flex flex-col md:flex-row max-w-4xl w-full">
+      <div className="relative border border-[#262840] rounded-3xl p-6 flex flex-col md:flex-row max-w-4xl w-full">
         
         {/* Floating Icons */}
         <div className="absolute right-[-28px] top-[5%] flex flex-col space-y-4">
@@ -29,11 +29,13 @@ function Body() {
             alt="Artwork"
             width={500}
             height={700}
-            className="rounded-2xl h-full object-cover w-full"
+            className="rounded-3xl h-full object-cover w-full"
           />
           <SvgLoader
+            width={200}
+            height={200}
             fileName="Arrow.svg"
-            className="absolute bottom-2 cursor-pointer left-1/2 -translate-x-1/2"
+            className="absolute bottom-0 cursor-pointer left-1/2 -translate-x-1/2"
           />
         </div>
 
@@ -54,7 +56,7 @@ function Body() {
               { img: "/images/auction/Auctionimg1.jpeg", label: "Collection", name: "Afterlife" },
             ].map(({ img, label, name }) => (
               <div key={name} className="flex items-center space-x-4 px-3 py-1 rounded-lg">
-                <Image src={img} alt={label} width={32} height={32} className="rounded-full" />
+                <Image src={img} alt={label} width={32} height={32} className="rounded-full w-[32] h-[32]" />
                 <div className="flex flex-col">
                   <p className="text-[12px] text-gray-400">{label}</p>
                   <span className="text-[12px]">{name}</span>
