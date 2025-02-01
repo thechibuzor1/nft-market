@@ -1,12 +1,12 @@
-import SvgLoader from "../SvgLoader";
+import Image from "next/image";
 
 const floatingSvgs = [
-  { fileName: "float 01.svg", name: "2.55 ETH", top: "15%", left: "70%" },
-  { fileName: "float 02.svg", name: "2.55 ETH", top: "25%", left: "10%" },
-  { fileName: "float 03.svg", name: "2.55 ETH", top: "35%", left: "85%" },
-  { fileName: "float 04.svg", name: "2.55 ETH", top: "50%", left: "20%" },
-  { fileName: "float 05.svg", name: "2.55 ETH", top: "60%", left: "60%" },
-  { fileName: "float 06.svg", name: "2.55 ETH", top: "75%", left: "10%" },
+  { fileName:  "images/floatingnfts/f4.jpeg", name: "2.55 ETH", top: "15%", left: "75%" },
+  { fileName:  "images/floatingnfts/f2.jpeg", name: "2.55 ETH", top: "25%", left: "10%" },
+  { fileName:  "images/floatingnfts/f5.jpeg", name: "2.55 ETH", top: "35%", left: "85%" },
+  { fileName:  "images/floatingnfts/f3.jpeg", name: "2.55 ETH", top: "50%", left: "20%" },
+  { fileName:  "images/floatingnfts/f6.jpeg", name: "2.55 ETH", top: "60%", left: "70%" },
+  { fileName:  "images/floatingnfts/f1.jpeg", name: "2.55 ETH", top: "75%", left: "10%" },
 ];
 
 const FloatingSVGs: React.FC = () => {
@@ -22,7 +22,8 @@ const FloatingSVGs: React.FC = () => {
             transform: "translate(-50%, -50%)",
           }}
         >
-          <SvgLoader width={50} height={50} fileName={svg.fileName} className="w-16 h-16 md:w-48 md:h-48" />
+          <Image alt='floating' width={50} height={50} src={svg.fileName} className="w-16  shadow-[0px_6px_12px_rgba(255,255,255,0.2)] rounded-2xl h-16" />
+          <p className="text-[12px] mt-1">{svg.name}</p>
         </div>
       ))}
     </div>

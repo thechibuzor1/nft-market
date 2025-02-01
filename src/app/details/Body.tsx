@@ -16,7 +16,7 @@ function Body() {
       <div className="relative border border-[#262840] rounded-2xl p-6 flex flex-col md:flex-row max-w-4xl w-full">
         
         {/* Floating Icons */}
-        <div className="absolute right-[-28px] top-[5%] flex flex-col space-y-4">
+        <div className="absolute right-[-32px] top-[5%] flex flex-col space-y-4">
           {["tiny heart filled.svg", "copy.svg", "share.svg"].map((icon) => (
             <FloatingIcons key={icon} name={icon} />
           ))}

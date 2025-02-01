@@ -3,7 +3,7 @@ import SvgLoader from "../SvgLoader";
 
 function Habitant() {
   return (
-    <div className="flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-8 justify-center w-full my-10 px-4 md:px-0">
+    <div className="flex h-screen flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-8 justify-center w-full my-10 px-4 md:px-0">
       {/* Illustration Section */}
       <div className="mt-6 md:mt-0 flex justify-center w-full max-w-[500px] md:max-w-[600px]">
         {/* SVG Loader for the Habitant Illustration */}

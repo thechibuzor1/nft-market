@@ -19,7 +19,7 @@ export default {
           "50%": { transform: "translateY(-10px)" },
         },
         scroll: {
-          '100%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(-50%)' },
         },
       },
       animation: {

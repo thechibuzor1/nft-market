@@ -8,7 +8,7 @@ function Footer() {
         <div className="relative flex flex-col p-6 md:w-1/3">
           <SvgLoader width={150} height={200} fileName="Logo.svg" />
 
-          <div className="flex flex-wrap md:flex-row mt-4 space-x-4 md:space-x-6">
+          <div className="flex absolute bottom-0 flex-wrap md:flex-row mt-4 space-x-4 md:space-x-6">
             <a className="text-[12px]">Support</a>
             <a className="text-[12px]">Terms of Service</a>
             <a className="text-[12px]">License</a>
@@ -16,7 +16,7 @@ function Footer() {
         </div>
 
         {/* Links Section */}
-        <div className="flex flex-col items-center md:items-start border-t md:border-t-0 md:border-l border-[#262840] p-6 md:w-1/3 space-y-3">
+        <div className="flex relative flex-col items-center md:items-start border-t md:border-t-0 md:border-l border-[#262840] p-6 md:w-1/3 space-y-3">
           <a className="text-[#ffffff]">Auctions</a>
           <a className="text-[#ffffff]">Roadmap</a>
           <a className="text-[#ffffff]">Discover</a>
@@ -26,7 +26,7 @@ function Footer() {
             My account
           </button>
 
-          <div className="flex mt-8 space-x-4 ">
+          <div className="flex mt-8  absolute bottom-0  space-x-4 ">
             <SvgLoader
               width={15}
               height={15}
@@ -61,14 +61,14 @@ function Footer() {
         </div>
 
         {/* Newsletter Section */}
-        <div className="flex flex-col items-center md:items-start md:text-left p-6 md:w-1/3 min-w-0">
+        <div className="flex flex-col relative  items-center md:items-start md:text-left p-6 md:w-1/3 min-w-0">
           <p className="text-sm text-white">
             Nibh volutpat, aliquam id sagittis elementum. Pellentesque laoreet
             velit, sed egestas in. Id nam semper dolor tellus vulputate eget
             turpis.
           </p>
-          <div className="flex mt-6 items-center bg-white rounded-xl shadow-lg p-2 w-full max-w-sm min-w-0">
-            {/* Search Input */}
+          <div className="flex mt-6 absolute bottom-0 left-1/2 -translate-x-1/2 items-center bg-white rounded-xl shadow-lg p-2 w-full max-w-sm min-w-0">
+ {/* Search Input */}
             <input
               type="text"
               placeholder="Newsletter"
@@ -79,7 +79,7 @@ function Footer() {
             <button className="flex-shrink-0 text-[#2A27C9] text-xs sm:text-sm px-3 py-1 border-l hover:bg-white border-gray-300">
               Sign in
             </button>
-          </div>
+          </div> 
         </div>
       </div>
     </footer>
