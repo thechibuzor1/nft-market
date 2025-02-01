@@ -41,13 +41,13 @@ function AuctionBlocks({ item }: { item: any }) {
       <div className="w-[95%] self-center h-[1px] bg-[#262840]" />
 
       <div className="flex mt-4 justify-between items-center">
-        <div className="flex mr-2">
+        <div className="flex ">
           {item.profiles.map((profile: string, i: number) => (
             <Image
               key={i}
               width={32}
               height={32}
-              className={`h-[32px] w-[32px] rounded-full ${
+              className={`h-[32px] w-[32px] border-2 border-black rounded-full ${
                 i !== 0 ? "-ml-2" : ""
               }`}
               src={profile}

@@ -2,13 +2,13 @@ import SvgLoader from "../SvgLoader";
 
 const SearchBar: React.FC = () => {
   return (
-    <div className="flex items-center mt-4 bg-white rounded-lg shadow-lg p-2 w-[500px] ">
+    <div className="flex items-center mt-4 bg-white rounded-lg shadow-lg p-2  ">
  <input
         type="text"
         placeholder="Items, collections and creators"
         className="flex-grow text-[#262840]  text-[12px] px-1 sm:px-4 outline-none bg-transparent"
       />
-      <div className="w-px bg-gray-300 h-5 sm:h-6 mx-2 sm:mx-3"></div>
+      <div className="w-px bg-gray-300 h-5 sm:h-6 mx-2 sm:mx-3"/>
       <select title="select" className="text-[#262840] text-[12px]   bg-transparent outline-none">
         <option>Category</option>
         <option>Best Sellers</option>
