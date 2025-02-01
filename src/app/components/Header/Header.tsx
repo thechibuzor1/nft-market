@@ -25,7 +25,7 @@ function Header() {
       <FloatingSVGs />
 
       {/* Main Content */}
-      <main className="flex flex-col items-center pt-4 px-4 max-w-screen-xl mx-auto">
+      <main className="flex flex-col  items-center mt-8 pt-4 px-4 max-w-screen-xl mx-auto">
         {/* Tagline */}
         <p className="text-sm md:text-base text-[#7780A1] text-center">
           Non Fungible Tokens

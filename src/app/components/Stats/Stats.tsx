@@ -24,19 +24,19 @@ function StatItem({
 // Stats Section Component
 function Stats() {
   return (
-    <div className="flex flex-col justify-center py-10">
+    <div className="flex min-h-screen flex-col justify-center py-10">
       {/* Divider Line */}
-      <div className="w-[65%] sm:w-full self-center h-[1px] bg-[#262840]" />
+      <div className="w-[65%] self-center h-[1px] bg-[#262840]" />
 
       {/* Stats Display - Responsive Layout */}
-      <div className="flex flex-wrap md:flex-nowrap justify-center items-center gap-6 md:gap-16 pt-10">
+      <div className="flex flex-wrap md:flex-nowrap justify-center mb-[75px] items-center gap-6 md:gap-16 pt-10">
         {stat_data.map((item, index) => (
           <StatItem key={index} {...item} />
         ))}
       </div>
 
       {/* CTA Section */}
-      <div className="flex flex-col md:flex-row items-center justify-between w-[75%] self-center px-4 sm:px-20 py-10 mt-14 bg-[#1C1D29] rounded-xl relative">
+      <div className="flex flex-col md:flex-row items-center justify-between  self-center px-4 sm:px-20 py-10 mt-14 bg-[#1C1D29] rounded-xl relative">
         {/* Top SVG */}
         <SvgLoader
           width={300}
@@ -60,10 +60,10 @@ function Stats() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-3 mt-5">
-            <button className="px-4 py-2 border-2 border-[#262840] text-[16px] rounded-xl bg-[#2A27C9] text-white">
+            <button className="px-6 py-3 border-2 border-[#262840] text-[14px] rounded-xl bg-[#2A27C9] text-white">
               Get started
             </button>
-            <button className="px-4 py-2 border-2 border-[#262840] text-[16px] text-[#7780A1] rounded-xl bg-transparent">
+            <button className="px-6 py-3 border-2 border-[#262840] text-[14px] text-[#7780A1] rounded-xl bg-transparent">
               Learn more
             </button>
           </div>

@@ -19,7 +19,7 @@ const duplicatedSvgs = Array(10).fill(floatingSvgs).flat();
 
 function ScrollingSvgs() {
   return (
-    <div className="w-full overflow-x-auto overflow-hidden py-8">
+    <div className="w-full overflow-hidden py-8">
   <div className="flex space-x-4 animate-scroll  w-max">
     {duplicatedSvgs.map((svg, index) => (
       <div key={index} className="flex  flex-col">
