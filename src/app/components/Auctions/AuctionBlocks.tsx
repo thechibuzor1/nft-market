@@ -7,12 +7,12 @@ function AuctionBlocks({ item }: { item: any }) {
   const [liked, setLiked] = useState<boolean>(false);
 
   return (
-    <div className="cursor-pointer p-4 w-[280px] sm:w-[350px] hover:bg-[#110f31] transition rounded-2xl border border-[#262840]">
+    <div className="cursor-pointer p-4 w-[320px] hover:bg-[#110f31] transition rounded-2xl border border-[#262840]">
       <Link href="/details">
         <Image
           width={350}
           height={400}
-          className="h-[300px] sm:h-[400px] w-full object-cover rounded-2xl mb-5"
+          className="h-[400px] w-full object-cover rounded-2xl mb-5"
           src={item.cover}
           alt=""
         />
@@ -31,9 +31,9 @@ function AuctionBlocks({ item }: { item: any }) {
         </div>
       </Link>
 
-      <div className="flex flex-row items-center mb-5 space-x-2">
-        <SvgLoader width={20} height={20} fileName="tiny clock.svg" />
-        <p className="text-[400] text-white text-[14px]">
+      <div className="flex flex-row items-center mb-5 space-x-1">
+        <SvgLoader width={15} height={15} fileName="tiny clock.svg" />
+        <p className="font-[400] text-white text-[12px]">
           {item.time} min left
         </p>
       </div>

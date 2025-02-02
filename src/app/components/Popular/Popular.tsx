@@ -59,7 +59,7 @@ function Popular() {
       <div className="flex flex-wrap justify-center">
         {/* Map through auctions to display the auction blocks */}
         {popular_auctions.map((item, index) => (
-          <div key={index} className="snap-center flex-shrink-0 w-[180px] sm:w-[220px] md:w-[250px] lg:w-[280px]">
+          <div key={index} className="snap-center flex-shrink-0">
             {/* Popular auction block */}
             <PopularBlocks item={item} />
           </div>

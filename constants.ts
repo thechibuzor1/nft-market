@@ -354,3 +354,25 @@ export const more_from =  [
     cover: "/images/morefrom/mf6.jpeg",
   },
 ];
+
+
+export const scrollingNfts = [
+  { fileName: "images/scrollingnfts/b1.jpeg", name: "2.55 ETH" },
+  { fileName: "images/scrollingnfts/b2.jpeg", name: "2.55 ETH" },
+  { fileName: "images/scrollingnfts/b3.jpeg", name: "2.55 ETH" },
+  { fileName: "images/scrollingnfts/b5.jpeg", name: "2.55 ETH" },
+  { fileName: "images/scrollingnfts/b6.jpeg", name: "2.55 ETH" },
+  { fileName: "images/scrollingnfts/b7.jpeg", name: "2.55 ETH" },
+  { fileName: "images/scrollingnfts/b8.jpeg", name: "2.55 ETH" },
+  { fileName: "images/scrollingnfts/b9.jpeg", name: "2.55 ETH" },
+  { fileName: "images/scrollingnfts/b10.jpeg", name: "2.55 ETH" },
+  { fileName: "images/scrollingnfts/b11.jpeg", name: "2.55 ETH" },
+  { fileName: "images/scrollingnfts/b12.jpeg", name: "2.55 ETH" },
+  { fileName: "images/scrollingnfts/b13.jpeg", name: "2.55 ETH" },
+  { fileName: "images/scrollingnfts/b14.jpeg", name: "2.55 ETH" },
+  { fileName: "images/scrollingnfts/b15.jpeg", name: "2.55 ETH" },
+  { fileName: "images/scrollingnfts/b16.jpeg", name: "2.55 ETH" },
+  { fileName: "images/scrollingnfts/b17.jpeg", name: "2.55 ETH" },
+  { fileName: "images/scrollingnfts/b18.jpeg", name: "2.55 ETH" },
+  { fileName: "images/scrollingnfts/b19.jpeg", name: "2.55 ETH" },
+];

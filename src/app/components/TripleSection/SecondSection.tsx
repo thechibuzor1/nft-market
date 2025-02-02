@@ -11,7 +11,7 @@ function SecondSection() {
     <div className="flex flex-col relative items-center bg-[#1C1D29] w-[320px] h-[700px] rounded-tr-xl rounded-br-xl rounded-bl-xl rounded-tl-none">
       {/* Background Decorative SVGs */}
       <SvgLoader width={200} fileName="s2.svg" className="absolute left-0 top-[-2%]" />
-      <LoadHand fileName="hand.svg" className="absolute top-[-17%]" />
+      <LoadHand />
 
       {/* Bottom Content Section */}
       <div className="absolute bottom-0 p-4">
@@ -27,7 +27,7 @@ function SecondSection() {
 
         {/* CTA Button */}
         <button
-          className="text-[12px] w-[100%] bg-[#2A27C9] my-4 border border-[#262840] py-2 rounded-md"
+          className="text-[12px] w-full bg-gradient-to-b from-[#4745D0] to-[#2427C9] my-4  py-2 rounded-lg"
           title="more"
         >
           Get started

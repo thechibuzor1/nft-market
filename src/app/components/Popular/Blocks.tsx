@@ -8,13 +8,13 @@ function PopularBlocks({ item }: { item: any }) {
 
   return (
     <div
-      className="p-4 cursor-pointer w-full md:w-[200px] lg:w-[250px] hover:bg-[#110f31] transition rounded-2xl"
+      className="p-4 cursor-pointer w-[200px] hover:bg-[#110f31] transition rounded-2xl"
     >
       <Link href="/details">
         <Image
           width={200}
           height={300}
-          className="h-[300px] w-full object-cover rounded-2xl mb-5"
+          className="h-[280px] w-full object-cover rounded-2xl mb-5"
           src={item.cover}
           alt=""
         />
@@ -46,7 +46,7 @@ function PopularBlocks({ item }: { item: any }) {
       <div className="w-[95%] self-center h-[1px] bg-[#262840]" />
 
       <div className="flex mt-4 justify-between items-center">
-        <p className="text-[400] text-[12px] text-[#7780A1]">
+        <p className="text-[400] text-[11px] text-[#7780A1]">
           {item.bids} people are bidding
         </p>
 

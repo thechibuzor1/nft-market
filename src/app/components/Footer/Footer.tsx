@@ -22,7 +22,7 @@ function Footer() {
           <a className="text-[#ffffff]">Discover</a>
           <a className="text-[#ffffff]">Community</a>
 
-          <button className="px-4 py-2 border-2 border-[#262840] mt-4 text-[14px] w-[150px] rounded-xl bg-[#2A27C9]">
+          <button className="px-6 py-3  text-[16px] rounded-xl  mt-4  w-[150px]   bg-gradient-to-b from-[#4745D0] to-[#2427C9]">
             My account
           </button>
 

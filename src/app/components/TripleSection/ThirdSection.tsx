@@ -24,7 +24,7 @@ function Blocks({ item }: { item: any }) {
         height={100}
         width={100}
         src={item.cover}
-        className="w-[100px] h-[100px] rounded-xl"
+        className="w-[100px] h-[100px] rounded-2xl"
       />
 
       {/* NFT Details */}
@@ -39,9 +39,9 @@ function Blocks({ item }: { item: any }) {
         <div className="flex flex-row items-center mb-2 justify-between">
           {/* Remaining Time */}
           <div className="flex flex-row items-center space-x-2">
-            <SvgLoader width={15} height={15} fileName="tiny clock.svg" />
-            <p className="text-[10px]">{item.time}</p>
-          </div>
+          <SvgLoader width={15} height={15}  fileName="tiny clock.svg" />
+          <p className="text-[11px] text-white">{item.time}</p>
+        </div>
 
           {/* Current Bid */}
           <div className="flex flex-col items-end h-min bg-[#514CFF26] rounded-lg px-2 py-1 shrink-0">
@@ -52,7 +52,7 @@ function Blocks({ item }: { item: any }) {
         </div>
 
         {/* Bidding Info & Like Button */}
-        <div className="flex justify-between">
+        <div className="flex justify-between mt-1 ">
           <p className="text-[10px] text-[#7780A1]">
             {item.bids} people are bidding
           </p>
@@ -78,7 +78,7 @@ function Blocks({ item }: { item: any }) {
  */
 function ThirdSection() {
   return (
-    <div className="flex flex-col relative border border-[#262840] w-full sm:w-[320px] h-[700px] p-8 rounded-2xl">
+    <div className="flex flex-col relative border border-[#262840] w-[320px] h-[700px] p-8 rounded-2xl">
       {/* Section Title */}
       <h1 className="font-semibold text-[26px] mb-10 text-left">
         Top NFT at a lower price

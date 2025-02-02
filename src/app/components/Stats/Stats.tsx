@@ -60,7 +60,7 @@ function Stats() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-3 mt-5">
-            <button className="px-6 py-3 border-2 border-[#262840] text-[14px] rounded-xl bg-[#2A27C9] text-white">
+            <button className="px-6 py-3  text-[14px] rounded-xl bg-gradient-to-b from-[#4745D0] to-[#2427C9] text-white">
               Get started
             </button>
             <button className="px-6 py-3 border-2 border-[#262840] text-[14px] text-[#7780A1] rounded-xl bg-transparent">

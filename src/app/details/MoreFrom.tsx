@@ -17,7 +17,7 @@ function MoreFrom() {
         {more_from.slice(0, 5).map((item, index) => (
           <div
             key={index}
-            className="snap-center flex-shrink-0 w-[180px] sm:w-[220px] md:w-[250px] lg:w-[280px]"
+            className="snap-center flex-shrink-0"
           >
             <PopularBlocks item={item} />
           </div>

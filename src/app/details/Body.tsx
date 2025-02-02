@@ -13,7 +13,7 @@ function FloatingIcons({ name }: { name: string }) {
 function Body() {
   return (
     <div className="flex justify-center items-center my-8 p-6">
-      <div className="relative border border-[#262840] rounded-2xl p-6 flex flex-col md:flex-row max-w-4xl w-full">
+      <div className="relative border border-[#262840] rounded-2xl p-6 flex flex-col md:flex-row max-w-5xl w-full">
         
         {/* Floating Icons */}
         <div className="absolute right-[-32px] top-[5%] flex flex-col space-y-4">
@@ -28,7 +28,7 @@ function Body() {
             src="/images/details/details.jpeg"
             alt="Artwork"
             width={600}
-            height={700}
+            height={800}
             className="rounded-2xl h-full object-cover w-full"
           />
           <SvgLoader
