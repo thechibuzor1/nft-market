@@ -3,7 +3,7 @@
 import Image from "next/image";
 import SvgLoader from "../SvgLoader";
 import { useState } from "react";
-import { auctions } from "../../../../constants";
+import { Auction, auctions } from "../../../../constants";
 import Link from "next/link";
 
 
@@ -13,7 +13,7 @@ import Link from "next/link";
  * - Clickable to navigate to the item details page.
  * - Includes a like button with a heart icon toggle.
  */
-function SlideItem({ item, isActive }: { item: any; isActive: boolean }) {
+function SlideItem({ item, isActive }: { item: Auction; isActive: boolean }) {
   const [liked, setLiked] = useState<boolean>(false);
 
 

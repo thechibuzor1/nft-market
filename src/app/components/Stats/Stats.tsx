@@ -1,17 +1,9 @@
 import Image from "next/image";
-import { stat_data } from "../../../../constants"; // Stats Data
+import { Stat, stat_data } from "../../../../constants"; // Stats Data
 import SvgLoader from "../SvgLoader";
 
 // Individual Stat Item Component
-function StatItem({
-  svg,
-  number,
-  stat,
-}: {
-  svg: string;
-  number: string;
-  stat: string;
-}) {
+function StatItem({ svg, number, stat }: Stat) {
   return (
     <div className="flex flex-col items-center text-center w-full sm:w-auto">
       <SvgLoader width={30} height={30} fileName={svg} />

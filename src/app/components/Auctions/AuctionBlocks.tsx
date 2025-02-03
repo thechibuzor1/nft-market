@@ -2,8 +2,9 @@ import Image from "next/image";
 import SvgLoader from "../SvgLoader";
 import { useState } from "react";
 import Link from "next/link";
+import { Auction } from "../../../../constants";
 
-function AuctionBlocks({ item }: { item: any }) {
+function AuctionBlocks({ item }: { item: Auction }) {
   const [liked, setLiked] = useState<boolean>(false);
 
   return (
@@ -42,7 +43,7 @@ function AuctionBlocks({ item }: { item: any }) {
 
       <div className="flex mt-4 justify-between items-center">
         <div className="flex ">
-          {item.profiles.map((profile: string, i: number) => (
+          {item.profiles?.map((profile: string, i: number) => (
             <Image
               key={i}
               width={32}

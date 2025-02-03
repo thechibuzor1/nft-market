@@ -2,8 +2,9 @@ import Image from "next/image";
 import SvgLoader from "../SvgLoader";
 import { useState } from "react";
 import Link from "next/link";
+import { Auction } from "../../../../constants";
 
-function PopularBlocks({ item }: { item: any }) {
+function PopularBlocks({ item }: { item:  Auction}) {
   const [liked, setLiked] = useState<boolean>(false);
 
   return (

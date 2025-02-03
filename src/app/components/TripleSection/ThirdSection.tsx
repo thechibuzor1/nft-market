@@ -3,7 +3,7 @@
 import Image from "next/image";
 import SvgLoader from "../SvgLoader";
 import { useState } from "react";
-import { nfts } from "../../../../constants";
+import { NFT, nfts } from "../../../../constants";
 import Link from "next/link";
 // Sample NFT data (static list for now)
 
@@ -12,7 +12,7 @@ import Link from "next/link";
  * - Represents a single NFT item in a compact horizontal layout.
  * - Displays NFT image, title, time remaining, current bid, and like button.
  */
-function Blocks({ item }: { item: any }) {
+function Blocks({ item }: { item: NFT }) {
   const [liked, setLiked] = useState<boolean>(false);
 
   return (

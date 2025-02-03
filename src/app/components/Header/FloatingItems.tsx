@@ -1,13 +1,7 @@
 import Image from "next/image";
+import { floatingSvgs } from "../../../../constants";
 
-const floatingSvgs = [
-  { fileName:  "images/floatingnfts/f4.jpeg", name: "2.55 ETH", top: "15%", left: "75%" },
-  { fileName:  "images/floatingnfts/f2.jpeg", name: "2.55 ETH", top: "25%", left: "10%" },
-  { fileName:  "images/floatingnfts/f5.jpeg", name: "2.55 ETH", top: "35%", left: "85%" },
-  { fileName:  "images/floatingnfts/f3.jpeg", name: "2.55 ETH", top: "50%", left: "20%" },
-  { fileName:  "images/floatingnfts/f6.jpeg", name: "2.55 ETH", top: "60%", left: "70%" },
-  { fileName:  "images/floatingnfts/f1.jpeg", name: "2.55 ETH", top: "75%", left: "10%" },
-];
+
 
 const FloatingSVGs: React.FC = () => {
   return (

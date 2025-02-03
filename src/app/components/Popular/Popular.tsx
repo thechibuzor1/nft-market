@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from "react";
+import { useState, Dispatch, SetStateAction } from "react";
 import PopularBlocks from "./Blocks";
 import { popular_auctions } from "../../../../constants";
 
@@ -15,7 +15,7 @@ const CategoryBlocks = ({
 }: {
   item: string;
   active: boolean;
-  setActive: any;
+  setActive: Dispatch<SetStateAction<string>>;
 }) => {
   return (
     <div 

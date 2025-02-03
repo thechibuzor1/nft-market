@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { scrollingNfts } from "../../../../constants";
+import { ScrollingNFT, scrollingNfts } from "../../../../constants";
 
 /**
  * ScrollingNft Component
@@ -11,7 +11,7 @@ import { scrollingNfts } from "../../../../constants";
  * Props:
  * - svg: { fileName: string; name: string } - NFT image source and name.
  */
-const ScrollingNft = ({ svg }: { svg: { fileName: string; name: string } }) => (
+const ScrollingNft = ({ svg }: { svg: ScrollingNFT }) => (
   <div className="flex flex-col">
     <Image
       alt="floating"
